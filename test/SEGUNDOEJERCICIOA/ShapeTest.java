@@ -28,30 +28,6 @@ public class ShapeTest {
     
     @Test
     public void testCuadradoTrue() {
-        Shape instance = new Shape(1,5.0);
-        double expResult = 25.0;
-        double result = instance.area();
-        assertEquals(expResult, result, 0.0);
-    }
-    
-    @Test
-    public void testCuadradoFalse() {
-        Shape instance = new Shape(1,5.0);
-        double expResult = 10.0;
-        double result = instance.area();
-        assertEquals(expResult, result, 0.0);
-    }
-    
-    @Test
-    public void testCirculoTrue() {
-        Shape instance = new Shape(2,0.0);
-        double expResult = 0;
-        double result = instance.area();
-        assertEquals(expResult, result, 0.0);
-    }
-    
-    @Test
-    public void testCirculoFalse() {
         Shape instance = new Shape(2,5.0);
         double expResult = 25.0;
         double result = instance.area();
@@ -59,8 +35,32 @@ public class ShapeTest {
     }
     
     @Test
-    public void testTrianguloTrue() {
+    public void testCuadradoFalse() {
         Shape instance = new Shape(3,5.0);
+        double expResult = 10.0;
+        double result = instance.area();
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test
+    public void testCirculoTrue() {
+        Shape instance = new Shape(4,0.0);
+        double expResult = 0;
+        double result = instance.area();
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test
+    public void testCirculoFalse() {
+        Shape instance = new Shape(1,5.0);
+        double expResult = 25.0;
+        double result = instance.area();
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test
+    public void testTrianguloTrue() {
+        Shape instance = new Shape(2,5.0);
         double expResult = 12.5;
         double result = instance.area();
         assertEquals(expResult, result, 0.0);
@@ -68,7 +68,7 @@ public class ShapeTest {
     
     @Test
     public void testTrianguloFalse() {
-        Shape instance = new Shape(3,5.0);
+        Shape instance = new Shape(1,5.0);
         double expResult = 25.0;
         double result = instance.area();
         assertEquals(expResult, result, 0.0);

@@ -27,7 +27,7 @@ public class FactorialTest {
     }
     
     public void testCalculo1(){
-        instance.calculo(100000000);
+        instance.calculo(100);
     }
     public void testCalculo2(){
         instance.calculo(1);
